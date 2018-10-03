@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Futura Std';
+    src: url('../fonts/FuturaStd-Book.eot');
+    src: url('../fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaStd-Book.woff2') format('woff2'),
+        url('../fonts/FuturaStd-Book.woff') format('woff'),
+        url('../fonts/FuturaStd-Book.ttf') format('truetype'),
+        url('../fonts/FuturaStd-Book.svg#FuturaStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bauer Bodoni Std';
+    src: url('../fonts/BauerBodoniStd-Roman.eot');
+    src: url('../fonts/BauerBodoniStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BauerBodoniStd-Roman.woff2') format('woff2'),
+        url('../fonts/BauerBodoniStd-Roman.woff') format('woff'),
+        url('../fonts/BauerBodoniStd-Roman.ttf') format('truetype'),
+        url('../fonts/BauerBodoniStd-Roman.svg#BauerBodoniStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Std';
+    src: url('../fonts/BodoniStd-Book.eot');
+    src: url('../fonts/BodoniStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BodoniStd-Book.woff2') format('woff2'),
+        url('../fonts/BodoniStd-Book.woff') format('woff'),
+        url('../fonts/BodoniStd-Book.ttf') format('truetype'),
+        url('../fonts/BodoniStd-Book.svg#BodoniStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #39536b;
+}
+header {
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 233;
+}
+header img{
+    max-width: 400px;
+
+}
+.custom-slider {
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.custom-slider li {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+}
+.custom-slider img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.coming_soon_wrapper {
+    max-width: 850px;
+    margin: 100px auto;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    padding: 0 15px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-animation-name: minor-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: minor-animation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.coming_soon_wrapper h1 {
+    font-size: 68px;
+    font-family: 'Bauer Bodoni Std';
+    line-height: 55px;
+}
+.coming_soon_wrapper p {
+    font-family: 'Bauer Bodoni Std';
+    font-size: 24px;
+}
+.coming_soon_wrapper p span{
+    font-family: 'Futura Std';
+    font-size: 18px;
+}
+.coming_soon_form {
+    max-width: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.coming_soon_form input {
+    background: transparent;
+    border: 2px solid #b0906e;
+    box-shadow: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-family: 'Futura Std';
+}
+.coming_soon_form input:focus{
+    background-color: transparent;
+    border: 2px solid #b0906e;
+}
+.coming_soon_form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #b0906e;
+    color: #fff;
+    padding: 11px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+.social-icons {
+    margin: 0;
+    list-style: none;
+}
+.social-icons p {
+    display: inline-block;
+    padding: 10px 15px;
+}
+.social-icons a {
+    color: #39536b;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    line-height: 60px;
+    font-size: 35px;
+    transition: all .3s linear 0s;
+}
+.social-icons a:hover{
+    color: #fff;
+    background: #b0906e;
+    bor
+} 
+.social-icons a i{
+    vertical-align: middle;
+}
+.social-icons {
+    padding-top: 60px;
+}
+
+@-webkit-keyframes minor-animation {
+    0%   {opacity: 0;}
+    100% {opacity: 1}
+}
+
+@keyframes minor-animation {
+    0%   {opacity: 0;}
+    100% {opacity: 1}
+}
+
+@media (max-width: 768px) {
+
+header{
+    text-align: center;
+}
+.coming_soon_wrapper {
+    margin: 180px auto 50px;
+    position: static;
+    transform: none;
+}
+.social-icons p {
+    padding: 10px 5px;
+}
+.social-icons a {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 15px;
+}
+.coming_soon_wrapper p{
+    font-size: 21px;
+}
+}
