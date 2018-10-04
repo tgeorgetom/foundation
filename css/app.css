@@ -63,7 +63,6 @@ header img{
     right: 0;
     top: 0;
     bottom: 0;
-    display: block;
 }
 .custom-slider img {
     width: 100%;
@@ -96,19 +95,21 @@ header img{
     font-size: 68px;
     font-family: 'Bauer Bodoni Std';
     line-height: 55px;
+    margin-bottom: 25px;
 }
 .coming_soon_wrapper p {
     font-family: 'Bauer Bodoni Std';
     font-size: 24px;
+    margin: 0
 }
 .coming_soon_wrapper p span{
     font-family: 'Futura Std';
     font-size: 18px;
 }
-.coming_soon_form {
+.coming_soon_form form{
     max-width: 500px;
     position: relative;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .coming_soon_form input {
