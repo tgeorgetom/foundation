@@ -58,10 +58,9 @@ header img{
 .custom-slider li {
     display: none; 
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    top: 0;
+    top: -30px;
     bottom: 0;
 }
 .custom-slider img {
