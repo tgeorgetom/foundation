@@ -42,3 +42,4 @@ jQuery(function($) {
     , $transition_time +  $time_between_slides 
   );
 });
+

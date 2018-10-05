@@ -47,7 +47,6 @@ header {
 }
 header img{
     max-width: 400px;
-
 }
 .custom-slider {
     height: 100vh;
@@ -116,8 +115,9 @@ header img{
     border: 2px solid #b0906e;
     box-shadow: none;
     padding: 5px 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Futura Std';
+    color: #fff;
 }
 .coming_soon_form input:focus{
     background-color: transparent;
@@ -136,7 +136,7 @@ header img{
     height: 100%;
     cursor: pointer;
 }
-.social-icons {
+.social-icons ul{
     margin: 0;
     list-style: none;
 }
@@ -154,11 +154,15 @@ header img{
     line-height: 60px;
     font-size: 35px;
     transition: all .3s linear 0s;
+    border-radius: 50px;
+}
+.social-icons a img{
+    border-radius: 50px;
 }
 .social-icons a:hover{
     color: #fff;
     background: #b0906e;
-    bor
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
 } 
 .social-icons a i{
     vertical-align: middle;
@@ -178,14 +182,19 @@ header img{
 }
 
 @media (max-width: 768px) {
-
+header img{
+    max-width: 320px;
+}
 header{
     text-align: center;
 }
-.coming_soon_wrapper {
-    margin: 180px auto 50px;
-    position: static;
-    transform: none;
+.coming_soon_wrapper h1 {
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+.coming_soon_form form {
+    margin: 10px auto 50px;
 }
 .social-icons p {
     padding: 10px 5px;
@@ -199,4 +208,5 @@ header{
 .coming_soon_wrapper p{
     font-size: 21px;
 }
+
 }
