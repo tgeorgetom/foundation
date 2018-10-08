@@ -61,6 +61,7 @@ header img{
     top: -30px;
     bottom: 0;
     visibility: hidden;
+    transition: all 0.5s linear 0s;
 }
 .custom-slider li.active{
     visibility: visible;
