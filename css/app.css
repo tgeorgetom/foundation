@@ -54,13 +54,17 @@ header img{
     margin: 0 auto;
     display: block;
 }
-.custom-slider li {
-    display: none; 
+.custom-slider li { 
     position: absolute;
     left: 0;
     right: 0;
     top: -30px;
     bottom: 0;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.custom-slider li.active{
+    opacity: 1;
 }
 .custom-slider img {
     width: 100%;
