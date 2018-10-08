@@ -71,7 +71,15 @@ header img{
 .custom-slider li.done {
     opacity: 1;
     visibility: visible;
-    background-color: #39536b
+    background-color: #39536b;
+    -webkit-animation-name: scale-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    animation-name: scale-animation;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+}
+.custom-slider li:last-child {
+    animation: none;
 }
 .custom-slider img {
     width: 100%;
@@ -211,6 +219,17 @@ header img{
     0%   {opacity: 0;}
     100% {opacity: 1}
 }
+@-webkit-keyframes scale-animation {
+    0%   {transform: scale(1)}
+    100% {transform: scale(1.7)}
+}
+
+@keyframes scale-animation {
+    0%   {transform: scale(1)}
+    100% {transform: scale(1.7)}
+}
+
+
 @media (max-height: 600px) {
 .coming_soon_wrapper{
     margin: 150px auto 50px;
