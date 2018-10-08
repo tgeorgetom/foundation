@@ -28,8 +28,8 @@ jQuery(function($) {
 
       if (slides().length == $i + 1) $i = -1; // loop to start
 
-      slides().eq($i + 1).fadeIn($transition_time);
       slides().eq($i + 1).addClass('active');
+      slides().eq($i + 1).fadeIn($transition_time);
     }
     , $transition_time +  $time_between_slides 
   );
