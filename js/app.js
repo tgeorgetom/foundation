@@ -13,11 +13,11 @@ jQuery(function($) {
     return $slider.find($slide);
   }
 
-  slides().fadeOut();
+  slides().hide();
 
   // set active classes
   slides().first().addClass('active');
-  slides().first().fadeIn($transition_time);
+  slides().first().show($transition_time);
 
   // auto scroll 
   $interval = setInterval(
@@ -26,11 +26,11 @@ jQuery(function($) {
       
 
       slides().eq($i).removeClass('active');
-      slides().eq($i).fadeOut($transition_time);
+      slides().eq($i).hide($transition_time);
 
       if (slides().length == $i + 1) $i = -1; // loop to start
 
-      slides().eq($i + 1).fadeIn($transition_time);
+      slides().eq($i + 1).show($transition_time);
       slides().eq($i + 1).addClass('active');
       count++;
 
