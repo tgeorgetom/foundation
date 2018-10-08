@@ -53,6 +53,7 @@ header img{
     position: relative;
     margin: 0 auto;
     display: block;
+    overflow: hidden;
 }
 .custom-slider li { 
     position: absolute;
