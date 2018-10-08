@@ -123,6 +123,27 @@ header img{
     background-color: transparent;
     border: 2px solid #b0906e;
 }
+.coming_soon_form input.is-invalid-input {
+    border-color: red;
+    background: transparent;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.email-field label small {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    opacity: 0;
+    width: 100%;
+    background: #fff;
+    transition: all 0.2s linear 0s;
+}
+
+.email-field label.is-invalid-label small {
+    display: block;
+    opacity: 1;
+}
 .coming_soon_form button {
     position: absolute;
     right: 0;
@@ -180,13 +201,27 @@ header img{
     0%   {opacity: 0;}
     100% {opacity: 1}
 }
-
+@media (max-height: 600px) {
+.coming_soon_wrapper{
+    margin: 150px auto 50px;
+}
+}
+@media (max-height: 500px) {
+.coming_soon_wrapper{
+    margin: 230px auto 50px;
+}
+}
 @media (max-width: 768px) {
 header img{
     max-width: 320px;
 }
 header{
     text-align: center;
+}
+.coming_soon_wrapper{
+    position: static;
+    transform: none;
+    margin: 200px auto 50px;
 }
 .coming_soon_wrapper h1 {
     font-size: 48px;

@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation();
 
 jQuery(function($) { 
 
@@ -24,6 +24,7 @@ jQuery(function($) {
     function(){
       var $i = $slider.find($slide + '.active').index();
       
+
       slides().eq($i).removeClass('active');
       slides().eq($i).fadeOut($transition_time);
 
@@ -34,7 +35,6 @@ jQuery(function($) {
       count++;
 
       if(slides().length == count){
-        console.log("done");
         clearInterval($interval);
       }
 
@@ -42,4 +42,7 @@ jQuery(function($) {
     , $transition_time +  $time_between_slides 
   );
 });
+
+
+
 
